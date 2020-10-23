@@ -10,7 +10,7 @@
   <PropertyGroup>
     <AssemblyName>datacollector</AssemblyName>
     <TargetFrameworks>netcoreapp2.1;net472</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(DotNetBuildFromSource)' == 'true' ">netcoreapp2.1</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(DotNetBuildFromSource)' == 'true' ">net5.0</TargetFrameworks>
     <WarningsAsErrors>true</WarningsAsErrors>
     <PlatformTarget Condition="'$(TargetFramework)' == 'net451'">AnyCPU</PlatformTarget>
     <OutputType>Exe</OutputType>

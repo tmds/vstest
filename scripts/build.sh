@@ -120,7 +120,7 @@ DOTNET_CLI_VERSION="5.0.100-rc.1.20380.12"
 TPB_Solution="TestPlatform.sln"
 TPB_Build_From_Source_Solution="TestPlatform_BuildFromSource.sln"
 TPB_TargetFramework="net451"
-TPB_TargetFrameworkCore="netcoreapp2.1"
+TPB_TargetFrameworkCore="net5.0"
 TPB_Configuration=$CONFIGURATION
 TPB_TargetRuntime=$TARGET_RUNTIME
 TPB_Version=$(test -z $VERSION_SUFFIX && echo $VERSION || echo $VERSION-$VERSION_SUFFIX)
@@ -338,7 +338,7 @@ function publish_package()
 
     log "publish_package: Complete. Elapsed $(( SECONDS - start ))s."
     
-    publishplatformatbstractions
+    # publishplatformatbstractions
 }
 
 function publishplatformatbstractions()
